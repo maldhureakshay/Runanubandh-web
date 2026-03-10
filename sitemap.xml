@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- ═══════════════════════════════════════════
+       Mali Runanubandh – XML Sitemap
+       Website: https://www.malirunanubandh.com
+       Last updated: 2025-01-01
+  ═══════════════════════════════════════════ -->
+
+  <!-- Homepage (Primary page) -->
+  <url>
+    <loc>https://www.malirunanubandh.com/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.malirunanubandh.com/"/>
+    <xhtml:link rel="alternate" hreflang="mr-IN" href="https://www.malirunanubandh.com/"/>
+    <image:image>
+      <image:loc>https://www.malirunanubandh.com/og-image.jpg</image:loc>
+      <image:title>Mali Runanubandh – Matrimonial App for Mali Samaj</image:title>
+      <image:caption>माळी ऋणानुबंध – Creating Sacred Unions for the Mali Community</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/GFWtZxwml2s/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Mali Runanubandh App Walkthrough</video:title>
+      <video:description>See how to use Mali Runanubandh – the matrimonial app for the Mali Samaj community.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=GFWtZxwml2s</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/GFWtZxwml2s</video:player_loc>
+      <video:duration>120</video:duration>
+      <video:publication_date>2025-01-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://firebasestorage.googleapis.com/v0/b/mali-runanubandh.firebasestorage.app/o/privacy-policy.html?alt=media&amp;token=6adbdc49-783d-4547-8823-a65154af54be</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Terms & Conditions -->
+  <url>
+    <loc>https://firebasestorage.googleapis.com/v0/b/mali-runanubandh.firebasestorage.app/o/termsandconditions.html?alt=media&amp;token=c3494722-546c-49c3-9008-3ec15ae54ab9</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>

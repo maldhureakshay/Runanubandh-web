@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Consent & Declaration - Mali Runanubandh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background: linear-gradient(135deg, #AA336A 0%, #5D1E3C 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #AA336A 0%, #5D1E3C 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .app-name {
+            font-size: 1.1em;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .intro {
+            font-size: 1.05em;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .intro strong {
+            color: #AA336A;
+        }
+
+        .consent-declaration {
+            background: linear-gradient(135deg, rgba(170, 51, 106, 0.1) 0%, rgba(93, 30, 60, 0.1) 100%);
+            border: 2px solid #AA336A;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .consent-declaration p {
+            color: #5D1E3C;
+            font-weight: 600;
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .consent-declaration .highlight {
+            color: #AA336A;
+            font-weight: 700;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            color: #AA336A;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(135deg, #AA336A 0%, #5D1E3C 100%);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .section p {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .section ul {
+            margin: 15px 0 15px 25px;
+            color: #555;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            padding-left: 5px;
+        }
+
+        .section li::marker {
+            color: #AA336A;
+        }
+
+        .section strong {
+            color: #5D1E3C;
+        }
+
+        .critical-box {
+            background: #FFE8F0;
+            border-left: 4px solid #AA336A;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .critical-box p {
+            margin-bottom: 10px;
+            color: #5D1E3C;
+            font-weight: 600;
+            line-height: 1.7;
+        }
+
+        .critical-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .critical-box strong {
+            color: #AA336A;
+        }
+
+        .critical-box ul {
+            margin: 10px 0 10px 20px;
+            color: #5D1E3C;
+        }
+
+        .critical-box li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .critical-box li::marker {
+            color: #AA336A;
+        }
+
+        .warning-box {
+            background: #FFF8E7;
+            border-left: 4px solid #DFAE45;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .warning-box p {
+            margin-bottom: 10px;
+            color: #856404;
+            font-weight: 600;
+            line-height: 1.7;
+        }
+
+        .warning-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .disclaimer-box {
+            background: #f8f9fa;
+            border: 2px dashed #AA336A;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .disclaimer-box p {
+            color: #5D1E3C;
+            font-weight: 600;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .disclaimer-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .disclaimer-box .emphasis {
+            color: #AA336A;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 25px 30px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9em;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .footer p {
+            margin-bottom: 8px;
+        }
+
+        .signature-section {
+            background: linear-gradient(135deg, #AA336A 0%, #5D1E3C 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .signature-section h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .signature-section p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.05em;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.4em;
+            }
+
+            .section-number {
+                width: 30px;
+                height: 30px;
+                font-size: 0.75em;
+            }
+
+            .consent-declaration {
+                padding: 20px;
+            }
+
+            .consent-declaration p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .content {
+                padding: 25px 15px;
+            }
+
+            .section h2 {
+                font-size: 1.3em;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .consent-declaration p {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>User Consent & Declaration</h1>
+            <div class="app-name">Mali Runanubandh</div>
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                This User Consent & Declaration applies to <strong>Mali Runanubandh</strong>, a social and matchmaking platform owned and operated by <strong>Malsoft Technologies</strong> ("Company").
+            </div>
+
+            <div class="consent-declaration">
+                <p>By creating a profile on Mali Runanubandh, <span class="highlight">I hereby confirm</span> that I have read, understood, and voluntarily agree to the following terms:</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">1</span> Voluntary Sharing of Information</h2>
+                <p>I understand that the personal information, photographs, and details provided by me (including but not limited to name, age, gender, education, profession, location, caste/community details, and profile photos) are shared by me <strong>voluntarily</strong> for the purpose of social interaction and matchmaking within the Mali Runanubandh app.</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">2</span> Profile Visibility & User Access</h2>
+                <p>I consent to my profile information being viewed, searched, contacted, and interacted with by other registered users of the Mali Runanubandh app.</p>
+                <div class="warning-box">
+                    <p>⚠️ I acknowledge that once my information is visible to other users, such information may be saved, shared, or misused by them, and that such actions are beyond the control of the Company.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">3</span> Platform Not Matchmaking Guarantee</h2>
+                <p>I acknowledge and agree that Mali Runanubandh is only a digital technology platform provided by Malsoft Technologies to enable users to create profiles and connect with each other.</p>
+                
+                <div class="critical-box">
+                    <p><strong>The app does not guarantee or promise:</strong></p>
+                    <ul>
+                        <li>Finding a suitable match, partner, or alliance</li>
+                        <li>Compatibility, relationship success, or marriage</li>
+                        <li>Accuracy, seriousness, or intentions of other users</li>
+                    </ul>
+                </div>
+
+                <p>I understand that Mali Runanubandh does not act as a marriage broker, agent, mediator, or guarantor, and that matches and outcomes depend solely on user preferences, decisions, and conduct.</p>
+
+                <div class="disclaimer-box">
+                    <p class="emphasis">IMPORTANT DISCLAIMER</p>
+                    <p>Failure to find a match or dissatisfaction with interactions shall not give rise to any claim, refund, compensation, or legal action against Mali Runanubandh or Malsoft Technologies, including its owners, employees, or affiliates.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">4</span> User Responsibility & Due Diligence</h2>
+                <p>I understand that Mali Runanubandh and Malsoft Technologies <strong>do not verify</strong> the identity, background, marital status, or authenticity of other users unless expressly stated.</p>
+                <p>Any communication, meeting, or relationship formed through the app is done entirely at my own discretion and risk, and I agree to exercise caution and personal judgment while interacting with other users.</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">5</span> Limitation of Liability</h2>
+                <p>I agree that Malsoft Technologies and Mali Runanubandh shall not be responsible or liable for:</p>
+                <ul>
+                    <li>Misuse of my profile data by other users</li>
+                    <li>Fraud, cheating, impersonation, harassment, or unlawful conduct</li>
+                    <li>Emotional, financial, physical, reputational, or legal loss arising from user interactions</li>
+                </ul>
+                <div class="warning-box">
+                    <p>⚠️ All disputes between users are strictly personal and outside the responsibility of the Company.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">6</span> Legal Compliance & Truthfulness</h2>
+                <p>I confirm that all information provided by me is <strong>true, accurate, and lawful</strong>, and does not violate any applicable laws, including the Information Technology Act, 2000, its applicable rules, or any other Indian laws governing online platforms and social applications.</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">7</span> Reporting, Blocking & Safety</h2>
+                <p>I understand that I may report or block any user engaging in inappropriate, misleading, or unlawful behavior using the in-app reporting tools.</p>
+                <p>Mali Runanubandh and Malsoft Technologies may take action as per internal policies but are not obligated to resolve personal disputes.</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">8</span> Profile Modification & Consent Withdrawal</h2>
+                <p>I understand that I may edit or delete my profile at any time.</p>
+                <div class="warning-box">
+                    <p>⚠️ However, information already viewed, shared, or saved by other users prior to deletion cannot be fully retrieved or controlled by the Company.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">9</span> Intermediary Disclaimer</h2>
+                <p>I acknowledge that Mali Runanubandh, owned and operated by Malsoft Technologies, functions solely as an <strong>intermediary platform</strong> under applicable Indian laws and does not initiate, select, modify, or control user-generated content.</p>
+            </div>
+
+            <div class="signature-section">
+                <h3>✓ User Acknowledgment</h3>
+                <p>By proceeding to create my profile, I confirm that I have read, understood, and voluntarily accepted all the terms, conditions, disclaimers, and limitations mentioned in this User Consent & Declaration.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>© 2026 Malsoft Technologies. All rights reserved.</strong></p>
+            <p>Mali Runanubandh - Connecting Hearts, Building Futures</p>
+        </div>
+    </div>
+</body>
+</html>

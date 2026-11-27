@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Mali Runanubandh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background: linear-gradient(135deg, #AA336A 0%, #5D1E3C 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #AA336A 0%, #5D1E3C 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .app-name {
+            font-size: 1.1em;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .last-updated {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-left: 4px solid #AA336A;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .intro {
+            font-size: 1.05em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .intro strong {
+            color: #AA336A;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            color: #AA336A;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(135deg, #AA336A 0%, #5D1E3C 100%);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .section h3 {
+            color: #495057;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+
+        .section p {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .section ul {
+            margin: 15px 0 15px 25px;
+            color: #555;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            padding-left: 5px;
+        }
+
+        .section li::marker {
+            color: #AA336A;
+        }
+
+        .warning-box {
+            background: #FFF8E7;
+            border-left: 4px solid #DFAE45;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .warning-box p {
+            margin-bottom: 8px;
+            color: #856404;
+            font-weight: 500;
+        }
+
+        .warning-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .important-box {
+            background: #FFE8F0;
+            border-left: 4px solid #AA336A;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .important-box p {
+            margin-bottom: 8px;
+            color: #5D1E3C;
+            font-weight: 500;
+        }
+
+        .important-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .important-box strong {
+            color: #AA336A;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #AA336A 0%, #5D1E3C 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .contact-box p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.05em;
+            margin-bottom: 0;
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 2px;
+            transition: border-color 0.3s;
+        }
+
+        .contact-box a:hover {
+            border-bottom-color: white;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 25px 30px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9em;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .footer p {
+            margin-bottom: 8px;
+        }
+
+        .agreement-notice {
+            background: linear-gradient(135deg, rgba(170, 51, 106, 0.1) 0%, rgba(93, 30, 60, 0.1) 100%);
+            border: 2px solid #AA336A;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .agreement-notice p {
+            color: #5D1E3C;
+            font-weight: 600;
+            font-size: 1.05em;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.4em;
+            }
+
+            .section-number {
+                width: 30px;
+                height: 30px;
+                font-size: 0.75em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .content {
+                padding: 25px 15px;
+            }
+
+            .section h2 {
+                font-size: 1.3em;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Terms & Conditions</h1>
+            <div class="app-name">Mali Runanubandh</div>
+        </div>
+
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> 8 Feb 2026
+            </div>
+
+            <div class="intro">
+                These Terms & Conditions ("<strong>Terms</strong>") govern your use of Mali Runanubandh, owned and operated by Malsoft Technologies.
+            </div>
+
+            <div class="agreement-notice">
+                <p>⚠️ By using the App, you agree to these Terms ⚠️</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">1</span> Platform Nature</h2>
+                <p>Mali Runanubandh is a technology-based social and matchmaking platform. The Company acts only as an intermediary and does not guarantee any matchmaking, relationship, or marriage outcome.</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">2</span> Eligibility</h2>
+                <ul>
+                    <li>Users must be <strong>18 years or older</strong></li>
+                    <li>Users must provide true and lawful information</li>
+                    <li>Fake, misleading, or impersonation profiles are prohibited</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">3</span> No Matchmaking Guarantee</h2>
+                <div class="important-box">
+                    <p><strong>The Company does not guarantee:</strong></p>
+                    <p>• Finding a match or partner</p>
+                    <p>• Compatibility or marriage</p>
+                    <p>• User intentions or authenticity</p>
+                </div>
+                <p>Failure to find a match shall not result in any claim or compensation.</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">4</span> User Conduct</h2>
+                <p><strong>You agree not to:</strong></p>
+                <ul>
+                    <li>Harass, threaten, or abuse other users</li>
+                    <li>Share obscene, illegal, or misleading content</li>
+                    <li>Misuse personal data of other users</li>
+                    <li>Engage in fraud or unlawful activities</li>
+                </ul>
+                <div class="warning-box">
+                    <p>⚠️ Violation may result in account suspension or termination.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">5</span> User Responsibility & Risk</h2>
+                <ul>
+                    <li>All interactions are at your own risk</li>
+                    <li>The Company does not verify user backgrounds</li>
+                    <li>Meetings or communications outside the App are your responsibility</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">6</span> Limitation of Liability</h2>
+                <p>Malsoft Technologies and Mali Runanubandh shall not be liable for:</p>
+                <ul>
+                    <li>User disputes</li>
+                    <li>Data misuse by other users</li>
+                    <li>Financial, emotional, physical, or legal damages</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">7</span> Account Termination</h2>
+                <p><strong>We reserve the right to:</strong></p>
+                <ul>
+                    <li>Suspend or delete accounts violating these Terms</li>
+                    <li>Remove content without prior notice</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">8</span> Intellectual Property</h2>
+                <p>All app content, branding, and software belong to Malsoft Technologies. Unauthorized copying or use is prohibited.</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">9</span> Legal Compliance</h2>
+                <p><strong>Users agree to comply with:</strong></p>
+                <ul>
+                    <li>Information Technology Act, 2000</li>
+                    <li>Applicable Indian laws and regulations</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">10</span> Governing Law & Jurisdiction</h2>
+                <p>These Terms shall be governed by laws of India. Any disputes shall be subject to the jurisdiction of courts in India.</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="section-number">11</span> Contact Information</h2>
+                <div class="contact-box">
+                    <h3>Need Support or Have Legal Queries?</h3>
+                    <p>Contact us at:<br>
+                    📧 <a href="mailto:akshaykumar.maldhure@gmail.com">akshaykumar.maldhure@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>© 2026 Malsoft Technologies. All rights reserved.</strong></p>
+            <p>Mali Runanubandh - Connecting Hearts, Building Futures</p>
+        </div>
+    </div>
+</body>
+</html>

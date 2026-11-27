@@ -1,0 +1,27 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+
+# Staged Firebase Hosting artifacts (produced by ../scripts/stage_admin_web.sh)
+# Remove these lines if you intentionally commit deploy bundles to git.
+/main.dart.js
+/main.dart.mjs
+/main.dart.wasm
+/flutter_bootstrap.js
+/flutter.js
+/flutter_service_worker.js
+/version.json
+/assets/
+/canvaskit/
+/favicon.png
+/icons/

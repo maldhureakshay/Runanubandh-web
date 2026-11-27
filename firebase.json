@@ -4,7 +4,33 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "admin/lib/**",
+      "admin/web/**",
+      "admin/test/**",
+      "admin/pubspec.yaml",
+      "admin/pubspec.lock",
+      "admin/analysis_options.yaml",
+      "admin/README.md",
+      "admin/.metadata",
+      "admin/.dart_tool/**",
+      "admin/build/**",
+      "admin/.flutter-plugins",
+      "admin/.flutter-plugins-dependencies",
+      "admin/.idea/**"
+    ],
+    "redirects": [
+      {
+        "source": "/admin",
+        "destination": "/admin/",
+        "type": 302
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/admin/**",
+        "destination": "/admin/index.html"
+      }
     ],
     "headers": [
       {
@@ -35,6 +61,18 @@
         "source": "/",
         "headers": [
           { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
+        ]
+      },
+      {
+        "source": "/admin/index.html",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        ]
+      },
+      {
+        "source": "/admin/assets/**",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
         ]
       }
     ]
